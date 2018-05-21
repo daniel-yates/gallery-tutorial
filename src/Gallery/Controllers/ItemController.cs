@@ -8,6 +8,9 @@ namespace Gallery.Controllers
 {
     public class ItemController : Controller
     {
-
+        public string Detail()
+        {
+            return "Hello from the item controller";
+        }
     }
 }
