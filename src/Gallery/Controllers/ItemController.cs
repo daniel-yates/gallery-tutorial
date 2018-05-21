@@ -1,12 +1,18 @@
 ﻿namespace Gallery.Controllers
 {
+    using System;
     using System.Web.Mvc;
 
     public class ItemController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hello from the item controller";
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)
+            {
+                return Redirect("/");
+            }
+
+            return Content("Hello from the item controller");
         }
     }
 }
