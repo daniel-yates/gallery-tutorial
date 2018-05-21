@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace Gallery.Controllers
+﻿namespace Gallery.Controllers
 {
+    using System.Web.Mvc;
+
     public class ItemController : Controller
     {
         public string Detail()
