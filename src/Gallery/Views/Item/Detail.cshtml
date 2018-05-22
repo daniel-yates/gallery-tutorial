@@ -1,15 +1,5 @@
 ﻿@{
-    Layout = null;
-
-    var seriesTitle = "Street Fighter";
-    var gameName = "Street Fighter 2: Champion Edition";
-    var description = "<p>Street Fighter II: Champion Edition is a competitive fighting game released for the arcades by Capcom in 1992</p>";
-    var developers = new string[]
-    {
-        "Producer(s): Yoshiki Okamoto",
-        "Designer(s): Akira Nishitani, Akira Yasuda",
-        "Composer(s): Isao Abe"
-    };
+    Layout = null;    
 }
 
 <!DOCTYPE html>
@@ -21,18 +11,18 @@
 </head>
 <body>
     <div>
-        <h1>@seriesTitle</h1>
-        <h2>@gameName</h2>
+        <h1>@ViewBag.SeriesTitle</h1>
+        <h2>@ViewBag.GameName</h2>
 
         <h5>Description:</h5>
-        <div>@Html.Raw(description)</div>
+        <div>@Html.Raw(ViewBag.Description)</div>
 
-        @if (developers.Length > 0)
+        @if (ViewBag.Developers.Length > 0)
         {
             <h5>Developers:</h5>
             <div>
                 <ul>
-                    @foreach (var developer in developers)
+                    @foreach (var developer in ViewBag.Developers)
                     {
                         <li>@developer</li>
                     }
