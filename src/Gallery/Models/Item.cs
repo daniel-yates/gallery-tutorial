@@ -18,7 +18,7 @@ namespace Gallery.Models
         {
             get
             {
-                return SeriesTitle + ": " + GameName;
+                return SeriesTitle + " - " + GameName;
             }
         }
 
@@ -26,8 +26,7 @@ namespace Gallery.Models
         {
             get
             {
-                return SeriesTitle.Replace(" ", "-")
-                    .ToLower() + "-" + GameName + ".jpg";
+                return SeriesTitle.Replace(" ", "-").ToLower() + "-" + GameName.Replace(" ", "-").Replace(":","").ToLower() + ".jpg";
             }
         }
     }
