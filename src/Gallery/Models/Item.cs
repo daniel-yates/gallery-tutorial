@@ -14,7 +14,8 @@ namespace Gallery.Models
         public Developer[] Developers { get; set; }
         public bool Favourite { get; set; }
 
-        public string DisplayText {
+        public string DisplayText
+        {
             get
             {
                 return SeriesTitle + ": " + GameName;
