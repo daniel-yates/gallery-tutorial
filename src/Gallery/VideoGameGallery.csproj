@@ -93,9 +93,9 @@
     <Content Include="Content\site.css" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\bone-50.jpg" />
-    <Content Include="Images\the-amazing-spider-man-657.jpg" />
-    <Content Include="Images\the-amazing-spider-man-700.jpg" />
+    <Content Include="Images\street-fighter-street-fighter-2-champion-edition.jpg" />
+    <Content Include="Images\street-fighter-street-fighter-2-turbo-hyper-fighting.jpg" />
+    <Content Include="Images\street-fighter-super-street-fighter-2.jpg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

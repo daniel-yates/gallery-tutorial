@@ -1,10 +1,6 @@
 ﻿namespace VideoGameGallery.Data
 {
     using VideoGameGallery.Models;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
 
     public class VideoGameRepository
     {
@@ -12,6 +8,7 @@
         {
             new VideoGame()
             {
+                Id = 1,
                 SeriesTitle = "Street Fighter",
                 GameName = "Street Fighter 2: Champion Edition",
                 DescriptionHtml = "<p>Street Fighter II: Champion Edition is a competitive fighting game released for the arcades by Capcom in 1992</p>",
@@ -24,6 +21,7 @@
             },
             new VideoGame()
             {
+                Id = 2,
                 SeriesTitle = "Street Fighter",
                 GameName = "Street Fighter 2 Turbo: Hyper Fighting",
                 DescriptionHtml = "<p>Street Fighter II Turbo: Hyper Fighting is a competitive fighting game released for the arcade by Capcom in 1992. It is the third game in the Street Fighter II sub-series of Street Fighter games following Street Fighter II: Champion Edition.</p>",
@@ -36,6 +34,7 @@
             },
             new VideoGame()
             {
+                Id = 3,
                 SeriesTitle = "Street Fighter",
                 GameName = "Super Street Fighter 2",
                 DescriptionHtml = "<p>Super Street Fighter II: The New Challengers is a head-to-head fighting game produced by Capcom and originally released as a coin-operated arcade game in 1993.</p>",

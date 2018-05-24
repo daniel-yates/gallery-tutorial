@@ -1,25 +1,26 @@
 ﻿namespace VideoGameGallery.Controllers
 {
     using VideoGameGallery.Models;
-    using System;
     using System.Web.Mvc;
+    using VideoGameGallery.Data;
 
     public class VideoGameController : Controller
     {
-        public ActionResult Detail()
+        private VideoGameRepository _videoGameRepository = null;
+
+        public VideoGameController()
         {
-            var videoGame = new VideoGame()
+            _videoGameRepository = new VideoGameRepository();
+        }
+        
+        public ActionResult Detail(int? id)
+        {
+            if (id == null)
             {
-                SeriesTitle = "Street Fighter",
-                GameName = "Street Fighter 2: Champion Edition",
-                DescriptionHtml = "<p>Street Fighter II: Champion Edition is a competitive fighting game released for the arcades by Capcom in 1992</p>",
-                Developers = new Developer[]
-                {
-                    new Developer() { Role = "Producer", Name = "Yoshiki Okamoto" },
-                    new Developer() { Role = "Designer", Name = "Akira Nishitani, Akira Yasuda" },
-                    new Developer() { Role = "Composer", Name = "Isao Abe" }
-                }
-            };
+                return HttpNotFound();
+            }
+
+            var videoGame = _videoGameRepository.GetVideoGame(id.Value);
 
             return View(videoGame);
         }
