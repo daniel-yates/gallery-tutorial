@@ -48,7 +48,7 @@
             }
         };
 
-        public VideoGame GetItem(int id)
+        public VideoGame GetVideoGame(int id)
         {
             VideoGame videoGameToReturn = null;
 
