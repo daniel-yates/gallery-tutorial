@@ -47,6 +47,11 @@
             }
         };
 
+        public VideoGame[] GetVideoGames()
+        {
+            return _videoGames;
+        }
+
         public VideoGame GetVideoGame(int id)
         {
             VideoGame videoGameToReturn = null;

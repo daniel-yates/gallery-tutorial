@@ -12,6 +12,13 @@
         {
             _videoGameRepository = new VideoGameRepository();
         }
+
+        public ActionResult Index()
+        {
+            var videoGames = _videoGameRepository.GetVideoGames();
+
+            return View(videoGames);
+        }
         
         public ActionResult Detail(int? id)
         {
