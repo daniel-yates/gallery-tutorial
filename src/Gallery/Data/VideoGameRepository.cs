@@ -1,6 +1,6 @@
-﻿namespace Gallery.Data
+﻿namespace VideoGameGallery.Data
 {
-    using Gallery.Models;
+    using VideoGameGallery.Models;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -8,9 +8,9 @@
 
     public class VideoGameRepository
     {
-        private static Item[] _videoGames = new Item[]
+        private static VideoGame[] _videoGames = new VideoGame[]
         {
-            new Item()
+            new VideoGame()
             {
                 SeriesTitle = "Street Fighter",
                 GameName = "Street Fighter 2: Champion Edition",
@@ -22,7 +22,7 @@
                     new Developer() { Role = "Composer", Name = "Isao Abe" }
                 }
             },
-            new Item()
+            new VideoGame()
             {
                 SeriesTitle = "Street Fighter",
                 GameName = "Street Fighter 2 Turbo: Hyper Fighting",
@@ -34,7 +34,7 @@
                     new Developer() { Role = "Composer", Name = "Yoko Shimomura, Isao Abe" }
                 }
             },
-            new Item()
+            new VideoGame()
             {
                 SeriesTitle = "Street Fighter",
                 GameName = "Super Street Fighter 2",
@@ -48,9 +48,9 @@
             }
         };
 
-        public Item GetItem(int id)
+        public VideoGame GetItem(int id)
         {
-            Item videoGameToReturn = null;
+            VideoGame videoGameToReturn = null;
 
             foreach (var videoGame in _videoGames)
             {

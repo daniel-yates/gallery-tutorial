@@ -1,14 +1,14 @@
-﻿namespace Gallery.Controllers
+﻿namespace VideoGameGallery.Controllers
 {
-    using Gallery.Models;
+    using VideoGameGallery.Models;
     using System;
     using System.Web.Mvc;
 
-    public class ItemController : Controller
+    public class VideoGameController : Controller
     {
         public ActionResult Detail()
         {
-            var videoGame = new Item()
+            var videoGame = new VideoGame()
             {
                 SeriesTitle = "Street Fighter",
                 GameName = "Street Fighter 2: Champion Edition",
